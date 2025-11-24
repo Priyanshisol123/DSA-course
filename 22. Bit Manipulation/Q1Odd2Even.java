@@ -1,5 +1,5 @@
 import java.util.*;
-public class Q1OddEven{
+public class Q1Odd2Even{
     public static void oddOrEven(int n){
         int bitMask=1;
         if((n & bitMask)==0){

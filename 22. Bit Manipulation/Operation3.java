@@ -1,5 +1,5 @@
 import java.util.*;
-public class Operation{
+public class Operation3{
     public static int getI(int n,int i){
         //n is number, i is postion start from 0
         int bitMask=(1<<i);
@@ -39,6 +39,11 @@ public class Operation{
         int bitMask=newBit<<i;
         return n=(n|bitMask);
     }
+    public static int clearLastI(int n,int i){
+        int BitMask=(-1)<<i;
+        // OR BitMask=(~0)<<i;
+        return n=(n & BitMask);
+    }
     public static void main(String args[]){
         System.out.println(getI(10,3));// 10 in binary 1010 so 3 position(3,2,1,0)
         System.out.println(setI(10,2));//1010 | 000000100 (position 2) give 00001110 
@@ -46,5 +51,6 @@ public class Operation{
         System.out.println(clearI(10,1));
         //15 is number, 3 is postion 
         System.out.println(updateI(10,2,1));
+        System.out.println(clearLastI(15,2));
     }
 }

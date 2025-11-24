@@ -1,5 +1,5 @@
 import java.util.*;
-public class BinaryOperators{
+public class Binary1Operators{
     public static void main(String args[]){
         System.out.println(5&6);
         System.out.println(5|6);
