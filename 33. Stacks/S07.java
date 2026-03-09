@@ -12,7 +12,7 @@ public class S07{
 //this loop for next greatest left
         for(int i=arr.length-1;i>=0;i--){
             //1 while
-            while(!s.isEmpty() && arr[s.peek()]<=arr[i]){//here for smallest >= 
+            while(!s.isEmpty() && arr[s.peek()]<=arr[i]){//here for smallest '>=' 
                 s.pop();
             }
 
